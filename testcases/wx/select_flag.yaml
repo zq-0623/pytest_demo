@@ -1,0 +1,9 @@
+-
+  name: 获取公共号已创建的标签
+  base_url: ${read_config_yaml(base,base_weixin_url)}
+  request:
+    method: get
+    url: /cgi-bin/tags/get?access_token=${read_extract_yaml(access_token)}
+  validate:
+    - equals: {status_code: 200}
+    - contains: tags

@@ -1,0 +1,97 @@
+[2022-06-07 14:03:01,567] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:01,568] logger_util.py->logs line:78 [INFO] 请求名称：成功获取一言名句
+[2022-06-07 14:03:01,568] logger_util.py->logs line:78 [INFO] 请求方式：get
+[2022-06-07 14:03:01,568] logger_util.py->logs line:78 [INFO] 请求路径：https://api.apiopen.top/api/sentences
+[2022-06-07 14:03:01,668] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'result'}, {'contains': '成功!'}]
+[2022-06-07 14:03:01,668] logger_util.py->logs line:78 [INFO] 实际结果：{'code': 200, 'message': '成功!', 'result': {'name': '半天凉月色，一笛酒人心。', 'from': '袁枚《夜过借园见主人坐月下吹笛》'}}
+[2022-06-07 14:03:01,668] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:01,668] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:01,670] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:01,671] logger_util.py->logs line:78 [INFO] 请求名称：url错误的场合
+[2022-06-07 14:03:01,671] logger_util.py->logs line:78 [INFO] 请求方式：get
+[2022-06-07 14:03:01,672] logger_util.py->logs line:78 [INFO] 请求路径：https://api.apiopen.top/api/sentences1
+[2022-06-07 14:03:01,691] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'code'}, {'contains': '资源飞走啦~'}]
+[2022-06-07 14:03:01,691] logger_util.py->logs line:78 [INFO] 实际结果：{'code': 404, 'message': '资源飞走啦~'}
+[2022-06-07 14:03:01,691] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:01,691] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:01,694] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:01,695] logger_util.py->logs line:78 [INFO] 请求名称：访问phpwind论坛首页
+[2022-06-07 14:03:01,696] logger_util.py->logs line:78 [INFO] 请求方式：get
+[2022-06-07 14:03:01,696] logger_util.py->logs line:78 [INFO] 请求路径：http://47.107.116.139/phpwind/
+[2022-06-07 14:03:01,876] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:01,876] logger_util.py->logs line:78 [INFO] 实际结果：
+[2022-06-07 14:03:01,876] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:01,876] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:01,878] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:01,880] logger_util.py->logs line:78 [INFO] 请求名称：phpwind论坛登录接口
+[2022-06-07 14:03:01,880] logger_util.py->logs line:78 [INFO] 请求方式：post
+[2022-06-07 14:03:01,880] logger_util.py->logs line:78 [INFO] 请求路径：http://47.107.116.139/phpwind/index.php?m=u&c=login&a=dorun
+[2022-06-07 14:03:01,880] logger_util.py->logs line:78 [INFO] 请求头：{'Accept': 'application/json, text/javascript, /; q=0.01', 'X-Requested-With': 'XMLHttpRequest'}
+[2022-06-07 14:03:01,880] logger_util.py->logs line:78 [INFO] 请求data参数：{'username': '王晓佳', 'password': 123456, 'csrf_token': 'cf29d85c14eee236', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': None}
+[2022-06-07 14:03:01,992] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:01,993] logger_util.py->logs line:78 [INFO] 实际结果：{'referer': 'http%3A%2F%2F47.107.116.139%2Fphpwind%2Findex.php%3Fm%3Du%26c%3Dlogin%26a%3Dwelcome%26_statu%3DSEhrZzNCZmdmMXhKazclMkZxYUlCJTJGMnk0TXVndVRud2dIamc2M1RTc1glMkJZbXRpNjV1UkxuSHR6M3JLbzFScE8xWHxodHRwOi8vNDcuMTA3LjExNi4xMzkvcGhwd2luZC98', 'refresh': False, 'state': 'success', 'data': '', 'html': '', 'message': [''], '__error': ''}
+[2022-06-07 14:03:01,993] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:01,993] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,003] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,004] logger_util.py->logs line:78 [INFO] 请求名称：成功获取鉴权码token
+[2022-06-07 14:03:02,004] logger_util.py->logs line:78 [INFO] 请求方式：get
+[2022-06-07 14:03:02,004] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-06-07 14:03:02,004] logger_util.py->logs line:78 [INFO] 请求params参数：{'grant_type': 'client_credential', 'appid': 'wx74a8627810cfa308', 'secret': 'e40a02f9d79a8097df497e6aaf93ab80'}
+[2022-06-07 14:03:02,224] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-06-07 14:03:02,224] logger_util.py->logs line:78 [INFO] 实际结果：{'access_token': '57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN', 'expires_in': 7200}
+[2022-06-07 14:03:02,224] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:02,224] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,226] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,228] logger_util.py->logs line:78 [INFO] 请求名称：创建标签接口
+[2022-06-07 14:03:02,228] logger_util.py->logs line:78 [INFO] 请求方式：post
+[2022-06-07 14:03:02,228] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/tags/create?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+[2022-06-07 14:03:02,228] logger_util.py->logs line:78 [INFO] 请求json参数：{'tag': {'name': 55}}
+[2022-06-07 14:03:02,381] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:02,381] logger_util.py->logs line:78 [INFO] 实际结果：{'tag': {'id': 6909, 'name': '55'}}
+[2022-06-07 14:03:02,381] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:02,381] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,383] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,385] logger_util.py->logs line:78 [INFO] 请求名称：删除创建的标签
+[2022-06-07 14:03:02,385] logger_util.py->logs line:78 [INFO] 请求方式：post
+[2022-06-07 14:03:02,385] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/tags/delete?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+[2022-06-07 14:03:02,385] logger_util.py->logs line:78 [INFO] 请求json参数：{'tag': {'id': 6909}}
+[2022-06-07 14:03:02,536] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:02,537] logger_util.py->logs line:78 [INFO] 实际结果：{'errcode': 0, 'errmsg': 'ok'}
+[2022-06-07 14:03:02,537] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:02,537] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,539] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,541] logger_util.py->logs line:78 [INFO] 请求名称：删除系统标签
+[2022-06-07 14:03:02,541] logger_util.py->logs line:78 [INFO] 请求方式：post
+[2022-06-07 14:03:02,541] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/tags/delete?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+[2022-06-07 14:03:02,541] logger_util.py->logs line:78 [INFO] 请求json参数：{'tag': {'id': 1}}
+[2022-06-07 14:03:02,614] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:02,615] logger_util.py->logs line:78 [INFO] 实际结果：{'errcode': 45058, 'errmsg': "can't modify sys tag hint: [bGdCbxore-YVbxca] rid: 629eea17-639806d0-4f0adc9c"}
+[2022-06-07 14:03:02,615] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:02,615] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,617] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,619] logger_util.py->logs line:78 [INFO] 请求名称：获取公共号已创建的标签
+[2022-06-07 14:03:02,619] logger_util.py->logs line:78 [INFO] 请求方式：get
+[2022-06-07 14:03:02,619] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/tags/get?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+[2022-06-07 14:03:02,748] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}, {'contains': 'tags'}]
+[2022-06-07 14:03:02,748] logger_util.py->logs line:78 [INFO] 实际结果：{'tags': [{'id': 2, 'name': '星标组', 'count': 0}, {'id': 6586, 'name': '广东人6406', 'count': 0}, {'id': 6831, 'name': '上海877nn', 'count': 0}, {'id': 6832, 'name': '上海7h7f8', 'count': 0}, {'id': 6833, 'name': '上海n77fh', 'count': 0}, {'id': 6834, 'name': '广东人78', 'count': 0}, {'id': 6835, 'name': '接口自动化测试870', 'count': 0}, {'id': 6836, 'name': '接口自动化测试875', 'count': 0}, {'id': 6837, 'name': '接口自动化测试524', 'count': 0}, {'id': 6838, 'name': '接口自动化测试198', 'count': 0}, {'id': 6844, 'name': '接口自动化测试735', 'count': 0}, {'id': 6845, 'name': '接口自动化测试164', 'count': 0}, {'id': 6846, 'name': '接口自动化测试379', 'count': 0}, {'id': 6847, 'name': '百里381', 'count': 0}, {'id': 6848, 'name': '百里859', 'count': 0}, {'id': 6849, 'name': '百里165', 'count': 0}, {'id': 6850, 'name': '百里873', 'count': 0}, {'id': 6854, 'name': '爱丽丝gdcgcb', 'count': 0}, {'id': 6855, 'name': '你好陌生人', 'count': 0}, {'id': 6856, 'name': '1226', 'count': 0}, {'id': 6857, 'name': '3387', 'count': 0}, {'id': 6858, 'name': '7981', 'count': 0}, {'id': 6859, 'name': '6399', 'count': 0}, {'id': 6860, 'name': '8081', 'count': 0}, {'id': 6861, 'name': '2900', 'count': 0}, {'id': 6862, 'name': '爱丽丝bdgfgd', 'count': 0}, {'id': 6863, 'name': '9395', 'count': 0}, {'id': 6864, 'name': '爱丽丝dgbfgc', 'count': 0}, {'id': 6865, 'name': '14', 'count': 0}, {'id': 6872, 'name': '百里617', 'count': 0}, {'id': 6873, 'name': '百里388', 'count': 0}, {'id': 6879, 'name': '??', 'count': 0}, {'id': 6880, 'name': 'hubei', 'count': 0}, {'id': 6881, 'name': 'wuhan', 'count': 0}, {'id': 6883, 'name': 'xiaogan435', 'count': 0}, {'id': 6884, 'name': 'xiaogan914', 'count': 0}, {'id': 6887, 'name': 'xiaogan341', 'count': 0}, {'id': 6888, 'name': 'xiaogan471', 'count': 0}, {'id': 6893, 'name': 'xiaogan291', 'count': 0}, {'id': 6900, 'name': '广东人1654575663732', 'count': 0}, {'id': 6901, 'name': '2022软件测试1654577364489', 'count': 0}, {'id': 6902, 'name': '2022软件测试1654577498314', 'count': 0}, {'id': 6903, 'name': '2022软件测试1654577513472', 'count': 0}, {'id': 6904, 'name': '广东人1654577580315', 'count': 0}]}
+[2022-06-07 14:03:02,748] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:02,748] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+
+[2022-06-07 14:03:02,751] logger_util.py->logs line:78 [INFO] --------接口测试开始--------
+[2022-06-07 14:03:02,753] logger_util.py->logs line:78 [INFO] 请求名称：文件上传
+[2022-06-07 14:03:02,753] logger_util.py->logs line:78 [INFO] 请求方式：post
+[2022-06-07 14:03:02,753] logger_util.py->logs line:78 [INFO] 请求路径：https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+[2022-06-07 14:03:02,753] logger_util.py->logs line:78 [INFO] 请求files参数：{'media': <_io.BufferedReader name='./testfile/img/seola.jpg'>}
+[2022-06-07 14:03:03,251] logger_util.py->logs line:78 [INFO] 预期结果：[{'equals': {'status_code': 200}}]
+[2022-06-07 14:03:03,251] logger_util.py->logs line:78 [INFO] 实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_jpg/GXkibaAlg9hicjgiawFiaIysg7rsGc9pibUnMzo45VxX4l9GqIZh5fexljOlrZ0fXIibWW1FWEwraORlwFeQfpJ9pHEw/0'}
+[2022-06-07 14:03:03,251] logger_util.py->logs line:78 [INFO] 接口测试成功
+[2022-06-07 14:03:03,251] logger_util.py->logs line:78 [INFO] --------接口测试结束--------
+

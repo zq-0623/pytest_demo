@@ -1,0 +1,4 @@
+#DDT 数据驱动 对应 sentences.yaml文件
+- ['name','url','assert_str1','assert_str2']
+- ['成功获取一言名句','/api/sentences','result','成功!']
+- ['url错误的场合','/api/sentences1','code','资源飞走啦~']

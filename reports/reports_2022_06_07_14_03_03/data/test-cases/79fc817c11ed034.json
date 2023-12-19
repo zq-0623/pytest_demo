@@ -1,0 +1,103 @@
+{
+  "uid" : "79fc817c11ed034",
+  "name" : "test_sentences[caseinfo0]",
+  "fullName" : "testcases.demo.test_demo.TestPhpwind#test_sentences",
+  "historyId" : "2d03cc6e5490cb883a82fb35dc5278d1",
+  "time" : {
+    "start" : 1654581781564,
+    "stop" : 1654581781669,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1654581781563,
+      "stop" : 1654581781564,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "4cd9fb3eb925dbf1",
+      "name" : "log",
+      "source" : "4cd9fb3eb925dbf1.txt",
+      "type" : "text/plain",
+      "size" : 718
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "DEMO案例"
+  }, {
+    "name" : "epic",
+    "value" : "接口自动化测试项目"
+  }, {
+    "name" : "story",
+    "value" : "获取一言名句"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.demo"
+  }, {
+    "name" : "suite",
+    "value" : "test_demo"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPhpwind"
+  }, {
+    "name" : "host",
+    "value" : "WINDOWS-0DSJECR"
+  }, {
+    "name" : "thread",
+    "value" : "24412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.demo.test_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '成功获取一言名句', 'parameterize': {'name-url-assert_str1-assert_str2': '/datas/demo/sentences_data.yaml'}, 'base_url': '${read_config_yaml(base,base_demo_url)}', 'request': {'method': 'get', 'url': '/api/sentences'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'result'}, {'contains': '成功!'}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "79fc817c11ed034.json",
+  "parameterValues" : [ "{'name': '成功获取一言名句', 'parameterize': {'name-url-assert_str1-assert_str2': '/datas/demo/sentences_data.yaml'}, 'base_url': '${read_config_yaml(base,base_demo_url)}', 'request': {'method': 'get', 'url': '/api/sentences'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'result'}, {'contains': '成功!'}]}" ]
+}

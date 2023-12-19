@@ -1,0 +1,131 @@
+[ {
+  "uid" : "daa4ebb36c229381",
+  "name" : "test_create_flag[caseinfo0]",
+  "time" : {
+    "start" : 1654581782226,
+    "stop" : 1654581782382,
+    "duration" : 156
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a419088243229032",
+  "name" : "test_get_token[caseinfo0]",
+  "time" : {
+    "start" : 1654581782004,
+    "stop" : 1654581782224,
+    "duration" : 220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eb69b382184296df",
+  "name" : "柑橘打印用例",
+  "time" : {
+    "start" : 1654581782000,
+    "stop" : 1654581782000,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9566ebd498f3847f",
+  "name" : "test_sentences[caseinfo1]",
+  "time" : {
+    "start" : 1654581781671,
+    "stop" : 1654581781692,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9edad2150744a6e2",
+  "name" : "test_select_flag[caseinfo0]",
+  "time" : {
+    "start" : 1654581782618,
+    "stop" : 1654581782748,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79fc817c11ed034",
+  "name" : "test_sentences[caseinfo0]",
+  "time" : {
+    "start" : 1654581781564,
+    "stop" : 1654581781669,
+    "duration" : 105
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8d857f24ed56278c",
+  "name" : "test_delete_flag[caseinfo0]",
+  "time" : {
+    "start" : 1654581782384,
+    "stop" : 1654581782538,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b330a484c7753f0",
+  "name" : "test_file_upload[caseinfo0]",
+  "time" : {
+    "start" : 1654581782751,
+    "stop" : 1654581783251,
+    "duration" : 500
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6eabcd78e2c4dfd9",
+  "name" : "test_phpwind_login[caseinfo0]",
+  "time" : {
+    "start" : 1654581781879,
+    "stop" : 1654581781994,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a097e2e5e9ca48ad",
+  "name" : "天草打印用例",
+  "time" : {
+    "start" : 1654581781998,
+    "stop" : 1654581781998,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "trivial"
+}, {
+  "uid" : "b00f8593ceede844",
+  "name" : "test_phpwind_index[caseinfo0]",
+  "time" : {
+    "start" : 1654581781695,
+    "stop" : 1654581781877,
+    "duration" : 182
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12a83ab1568bbd7d",
+  "name" : "柑橘打印用例",
+  "time" : {
+    "start" : 1654581782002,
+    "stop" : 1654581782002,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fdf28e972cac2200",
+  "name" : "test_delete_flag[caseinfo1]",
+  "time" : {
+    "start" : 1654581782540,
+    "stop" : 1654581782616,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

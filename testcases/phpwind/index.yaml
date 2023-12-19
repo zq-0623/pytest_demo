@@ -1,0 +1,10 @@
+-
+  name: 访问phpwind论坛首页
+  base_url: ${read_config_yaml(base,base_phpwind_url)}
+  request:
+    method: get
+    url: /phpwind/
+  extract:
+    csrf_token: 'name="csrf_token" value="(.*?)"'
+  validate:
+    - equals: {status_code: 200}

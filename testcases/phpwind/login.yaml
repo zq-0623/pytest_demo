@@ -1,0 +1,17 @@
+-
+  name: phpwind论坛登录接口
+  base_url: ${read_config_yaml(base,base_phpwind_url)}
+  request:
+    method: post
+    url: /phpwind/index.php?m=u&c=login&a=dorun
+    headers:
+      Accept: application/json, text/javascript, /; q=0.01
+      X-Requested-With: XMLHttpRequest
+    data:
+      username: 王晓佳
+      password: 123456
+      csrf_token: ${read_extract_yaml(csrf_token)}
+      backurl: http://47.107.116.139/phpwind/
+      invite:
+  validate:
+    - equals: {status_code: 200}

@@ -1,0 +1,3 @@
+#DDT 数据驱动，对应 mer_login_case.yaml文件
+- ['name','appid','secret','grant_type','assert_str']
+- ['成功获取鉴权码token','wx74a8627810cfa308','e40a02f9d79a8097df497e6aaf93ab80','client_credential','access_token']

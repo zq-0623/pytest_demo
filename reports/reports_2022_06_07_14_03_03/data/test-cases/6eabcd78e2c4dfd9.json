@@ -1,0 +1,103 @@
+{
+  "uid" : "6eabcd78e2c4dfd9",
+  "name" : "test_phpwind_login[caseinfo0]",
+  "fullName" : "testcases.phpwind.test_phpwind.TestPhpwind#test_phpwind_login",
+  "historyId" : "b46446421d1e5622d42a47cd6f25c7d5",
+  "time" : {
+    "start" : 1654581781879,
+    "stop" : 1654581781994,
+    "duration" : 115
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1654581781563,
+      "stop" : 1654581781564,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "694a7c8f70bccfb8",
+      "name" : "log",
+      "source" : "694a7c8f70bccfb8.txt",
+      "type" : "text/plain",
+      "size" : 1209
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "phpwind论坛"
+  }, {
+    "name" : "story",
+    "value" : "phpwind论坛登录接口"
+  }, {
+    "name" : "epic",
+    "value" : "接口自动化测试项目"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.phpwind"
+  }, {
+    "name" : "suite",
+    "value" : "test_phpwind"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPhpwind"
+  }, {
+    "name" : "host",
+    "value" : "WINDOWS-0DSJECR"
+  }, {
+    "name" : "thread",
+    "value" : "24412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.phpwind.test_phpwind"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': 'phpwind论坛登录接口', 'base_url': '${read_config_yaml(base,base_phpwind_url)}', 'request': {'method': 'post', 'url': '/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json, text/javascript, /; q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': '王晓佳', 'password': 123456, 'csrf_token': '${read_extract_yaml(csrf_token)}', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': None}}, 'validate': [{'equals': {'status_code': 200}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6eabcd78e2c4dfd9.json",
+  "parameterValues" : [ "{'name': 'phpwind论坛登录接口', 'base_url': '${read_config_yaml(base,base_phpwind_url)}', 'request': {'method': 'post', 'url': '/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json, text/javascript, /; q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': '王晓佳', 'password': 123456, 'csrf_token': '${read_extract_yaml(csrf_token)}', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': None}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+}

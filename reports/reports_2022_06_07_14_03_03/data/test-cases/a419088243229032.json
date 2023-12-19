@@ -1,0 +1,100 @@
+{
+  "uid" : "a419088243229032",
+  "name" : "test_get_token[caseinfo0]",
+  "fullName" : "testcases.wx.test_wx.TestWx#test_get_token",
+  "historyId" : "f053680b28c3499aea737c891c8353f9",
+  "time" : {
+    "start" : 1654581782004,
+    "stop" : 1654581782224,
+    "duration" : 220
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1654581781563,
+      "stop" : 1654581781564,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3abf06f6373142",
+      "name" : "log",
+      "source" : "3abf06f6373142.txt",
+      "type" : "text/plain",
+      "size" : 910
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "微信模块"
+  }, {
+    "name" : "story",
+    "value" : "获取接口统一鉴权码"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.wx"
+  }, {
+    "name" : "suite",
+    "value" : "test_wx"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWx"
+  }, {
+    "name" : "host",
+    "value" : "WINDOWS-0DSJECR"
+  }, {
+    "name" : "thread",
+    "value" : "24412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.wx.test_wx"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '成功获取鉴权码token', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-appid-secret-grant_type-assert_str': '/datas/wx/get_token_data.yaml'}, 'request': {'method': 'get', 'url': '/cgi-bin/token', 'params': {'grant_type': 'client_credential', 'appid': 'wx74a8627810cfa308', 'secret': 'e40a02f9d79a8097df497e6aaf93ab80'}}, 'extract': {'access_token': '\"access_token\":\"(.*?)\"', 'expires_in': '$.expires_in'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'access_token'}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a419088243229032.json",
+  "parameterValues" : [ "{'name': '成功获取鉴权码token', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-appid-secret-grant_type-assert_str': '/datas/wx/get_token_data.yaml'}, 'request': {'method': 'get', 'url': '/cgi-bin/token', 'params': {'grant_type': 'client_credential', 'appid': 'wx74a8627810cfa308', 'secret': 'e40a02f9d79a8097df497e6aaf93ab80'}}, 'extract': {'access_token': '\"access_token\":\"(.*?)\"', 'expires_in': '$.expires_in'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'access_token'}]}" ]
+}

@@ -1,0 +1,11 @@
+-
+  name: $ddt{name}
+  base_url: ${read_config_yaml(base,base_weixin_url)}
+  parameterize:
+    name-tag_id: /datas/wx/delete_flag_data.yaml
+  request:
+    method: post
+    url: /cgi-bin/tags/delete?access_token=${read_extract_yaml(access_token)}
+    json: {"tag":{"id":"$ddt{tag_id}"}}
+  validate:
+    - equals: {status_code: 200}

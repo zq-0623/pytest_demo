@@ -1,0 +1,10 @@
+-
+  name: 文件上传
+  base_url: ${read_config_yaml(base,base_weixin_url)}
+  request:
+    method: post
+    url: /cgi-bin/media/uploadimg?access_token=${read_extract_yaml(access_token)}
+    files:
+       media: ./testfile/img/seola.jpg
+  validate:
+    - equals: {status_code: 200}

@@ -1,0 +1,4 @@
+#DDT 数据驱动，对应 delete_flag.yaml文件
+- ['name','tag_id']
+- ['删除创建的标签','${read_extract_yaml(tag_id)}']
+- ['删除系统标签',1]

@@ -1,0 +1,286 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "接口自动化测试项目",
+    "children" : [ {
+      "name" : "DEMO案例",
+      "children" : [ {
+        "name" : "获取一言名句",
+        "children" : [ {
+          "name" : "test_sentences[caseinfo0]",
+          "uid" : "79fc817c11ed034",
+          "parentUid" : "b7e3f2856be416a15e7b35685ef484d7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581781564,
+            "stop" : 1654581781669,
+            "duration" : 105
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': '成功获取一言名句', 'parameterize': {'name-url-assert_str1-assert_str2': '/datas/demo/sentences_data.yaml'}, 'base_url': '${read_config_yaml(base,base_demo_url)}', 'request': {'method': 'get', 'url': '/api/sentences'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'result'}, {'contains': '成功!'}]}" ]
+        }, {
+          "name" : "test_sentences[caseinfo1]",
+          "uid" : "9566ebd498f3847f",
+          "parentUid" : "b7e3f2856be416a15e7b35685ef484d7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581781671,
+            "stop" : 1654581781692,
+            "duration" : 21
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': 'url错误的场合', 'parameterize': {'name-url-assert_str1-assert_str2': '/datas/demo/sentences_data.yaml'}, 'base_url': '${read_config_yaml(base,base_demo_url)}', 'request': {'method': 'get', 'url': '/api/sentences1'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'code'}, {'contains': '资源飞走啦~'}]}" ]
+        } ],
+        "uid" : "b7e3f2856be416a15e7b35685ef484d7"
+      } ],
+      "uid" : "d788e1b1438cca01724b8a61b8e501a5"
+    }, {
+      "name" : "phpwind论坛",
+      "children" : [ {
+        "name" : "访问phpwind论坛首页",
+        "children" : [ {
+          "name" : "test_phpwind_index[caseinfo0]",
+          "uid" : "b00f8593ceede844",
+          "parentUid" : "82d0101c2c929b22fa77a3e3b518df68",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581781695,
+            "stop" : 1654581781877,
+            "duration" : 182
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': '访问phpwind论坛首页', 'base_url': '${read_config_yaml(base,base_phpwind_url)}', 'request': {'method': 'get', 'url': '/phpwind/'}, 'extract': {'csrf_token': 'name=\"csrf_token\" value=\"(.*?)\"'}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+        } ],
+        "uid" : "82d0101c2c929b22fa77a3e3b518df68"
+      }, {
+        "name" : "phpwind论坛登录接口",
+        "children" : [ {
+          "name" : "test_phpwind_login[caseinfo0]",
+          "uid" : "6eabcd78e2c4dfd9",
+          "parentUid" : "3e38fdc312d8be501425ca6d5e240109",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581781879,
+            "stop" : 1654581781994,
+            "duration" : 115
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "{'name': 'phpwind论坛登录接口', 'base_url': '${read_config_yaml(base,base_phpwind_url)}', 'request': {'method': 'post', 'url': '/phpwind/index.php?m=u&c=login&a=dorun', 'headers': {'Accept': 'application/json, text/javascript, /; q=0.01', 'X-Requested-With': 'XMLHttpRequest'}, 'data': {'username': '王晓佳', 'password': 123456, 'csrf_token': '${read_extract_yaml(csrf_token)}', 'backurl': 'http://47.107.116.139/phpwind/', 'invite': None}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+        } ],
+        "uid" : "3e38fdc312d8be501425ca6d5e240109"
+      } ],
+      "uid" : "e4acdc609bee3c1b7d6858de8a143fed"
+    }, {
+      "name" : "测试模块",
+      "children" : [ {
+        "name" : "天草接口",
+        "children" : [ {
+          "name" : "天草打印用例",
+          "uid" : "a097e2e5e9ca48ad",
+          "parentUid" : "911a687eff440268fe76b0e3841680c6",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581781998,
+            "stop" : 1654581781998,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "911a687eff440268fe76b0e3841680c6"
+      }, {
+        "name" : "柑橘接口",
+        "children" : [ {
+          "name" : "柑橘打印用例",
+          "uid" : "eb69b382184296df",
+          "parentUid" : "8c19bbddadb4b0f2da8b17551c554c4f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581782000,
+            "stop" : 1654581782000,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "'柑橘01'" ]
+        }, {
+          "name" : "柑橘打印用例",
+          "uid" : "12a83ab1568bbd7d",
+          "parentUid" : "8c19bbddadb4b0f2da8b17551c554c4f",
+          "status" : "passed",
+          "time" : {
+            "start" : 1654581782002,
+            "stop" : 1654581782002,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "newPassed" : false,
+          "newBroken" : false,
+          "retriesCount" : 0,
+          "retriesStatusChange" : false,
+          "parameters" : [ "'柑橘02'" ]
+        } ],
+        "uid" : "8c19bbddadb4b0f2da8b17551c554c4f"
+      } ],
+      "uid" : "37b374d9865e6db93d3dd1579ca45d6a"
+    } ],
+    "uid" : "95065ae0852bca57046c470c0f03fe2c"
+  }, {
+    "name" : "微信模块",
+    "children" : [ {
+      "name" : "获取接口统一鉴权码",
+      "children" : [ {
+        "name" : "test_get_token[caseinfo0]",
+        "uid" : "a419088243229032",
+        "parentUid" : "e41a8fa61a47aa8eb0d30b89fa7b22a9",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782004,
+          "stop" : 1654581782224,
+          "duration" : 220
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '成功获取鉴权码token', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-appid-secret-grant_type-assert_str': '/datas/wx/get_token_data.yaml'}, 'request': {'method': 'get', 'url': '/cgi-bin/token', 'params': {'grant_type': 'client_credential', 'appid': 'wx74a8627810cfa308', 'secret': 'e40a02f9d79a8097df497e6aaf93ab80'}}, 'extract': {'access_token': '\"access_token\":\"(.*?)\"', 'expires_in': '$.expires_in'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'access_token'}]}" ]
+      } ],
+      "uid" : "e41a8fa61a47aa8eb0d30b89fa7b22a9"
+    }, {
+      "name" : "创建标签",
+      "children" : [ {
+        "name" : "test_create_flag[caseinfo0]",
+        "uid" : "daa4ebb36c229381",
+        "parentUid" : "86a3f7d798ce8a6f3efa6cdeaf1ea2df",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782226,
+          "stop" : 1654581782382,
+          "duration" : 156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '创建标签接口', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'request': {'method': 'post', 'url': '/cgi-bin/tags/create?access_token=${read_extract_yaml(access_token)}', 'json': {'tag': {'name': '${get_randon_number(9,99)}'}}}, 'extract': {'tag_id': '$.tag.id'}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+      } ],
+      "uid" : "86a3f7d798ce8a6f3efa6cdeaf1ea2df"
+    }, {
+      "name" : "删除标签",
+      "children" : [ {
+        "name" : "test_delete_flag[caseinfo0]",
+        "uid" : "8d857f24ed56278c",
+        "parentUid" : "3e056c6422cc89139db7fb1437c2e963",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782384,
+          "stop" : 1654581782538,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '删除创建的标签', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-tag_id': '/datas/wx/delete_flag_data.yaml'}, 'request': {'method': 'post', 'url': '/cgi-bin/tags/delete?access_token=${read_extract_yaml(access_token)}', 'json': {'tag': {'id': '${read_extract_yaml(tag_id)}'}}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+      }, {
+        "name" : "test_delete_flag[caseinfo1]",
+        "uid" : "fdf28e972cac2200",
+        "parentUid" : "3e056c6422cc89139db7fb1437c2e963",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782540,
+          "stop" : 1654581782616,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '删除系统标签', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-tag_id': '/datas/wx/delete_flag_data.yaml'}, 'request': {'method': 'post', 'url': '/cgi-bin/tags/delete?access_token=${read_extract_yaml(access_token)}', 'json': {'tag': {'id': 1}}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+      } ],
+      "uid" : "3e056c6422cc89139db7fb1437c2e963"
+    }, {
+      "name" : "获取公共号已创建的标签",
+      "children" : [ {
+        "name" : "test_select_flag[caseinfo0]",
+        "uid" : "9edad2150744a6e2",
+        "parentUid" : "01e3383fdfd0337782b6a752e8f45ae4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782618,
+          "stop" : 1654581782748,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '获取公共号已创建的标签', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'request': {'method': 'get', 'url': '/cgi-bin/tags/get?access_token=${read_extract_yaml(access_token)}'}, 'validate': [{'equals': {'status_code': 200}}, {'contains': 'tags'}]}" ]
+      } ],
+      "uid" : "01e3383fdfd0337782b6a752e8f45ae4"
+    }, {
+      "name" : "文件上传",
+      "children" : [ {
+        "name" : "test_file_upload[caseinfo0]",
+        "uid" : "3b330a484c7753f0",
+        "parentUid" : "5441253c2721849c2699d651782552da",
+        "status" : "passed",
+        "time" : {
+          "start" : 1654581782751,
+          "stop" : 1654581783251,
+          "duration" : 500
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "{'name': '文件上传', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'request': {'method': 'post', 'url': '/cgi-bin/media/uploadimg?access_token=${read_extract_yaml(access_token)}', 'files': {'media': './testfile/img/seola.jpg'}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+      } ],
+      "uid" : "5441253c2721849c2699d651782552da"
+    } ],
+    "uid" : "3a7515933d8283f32cba8af87e05e1d7"
+  } ]
+}

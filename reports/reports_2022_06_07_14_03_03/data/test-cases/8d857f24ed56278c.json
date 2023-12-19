@@ -1,0 +1,100 @@
+{
+  "uid" : "8d857f24ed56278c",
+  "name" : "test_delete_flag[caseinfo0]",
+  "fullName" : "testcases.wx.test_wx.TestWx#test_delete_flag",
+  "historyId" : "1bd5d93d5febb0bccf3ad537e5394968",
+  "time" : {
+    "start" : 1654581782384,
+    "stop" : 1654581782538,
+    "duration" : 154
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "clear_yaml",
+    "time" : {
+      "start" : 1654581781563,
+      "stop" : 1654581781564,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "81b42d5421898741",
+      "name" : "log",
+      "source" : "81b42d5421898741.txt",
+      "type" : "text/plain",
+      "size" : 793
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "微信模块"
+  }, {
+    "name" : "story",
+    "value" : "删除标签"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcases.wx"
+  }, {
+    "name" : "suite",
+    "value" : "test_wx"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestWx"
+  }, {
+    "name" : "host",
+    "value" : "WINDOWS-0DSJECR"
+  }, {
+    "name" : "thread",
+    "value" : "24412-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcases.wx.test_wx"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '删除创建的标签', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-tag_id': '/datas/wx/delete_flag_data.yaml'}, 'request': {'method': 'post', 'url': '/cgi-bin/tags/delete?access_token=${read_extract_yaml(access_token)}', 'json': {'tag': {'id': '${read_extract_yaml(tag_id)}'}}}, 'validate': [{'equals': {'status_code': 200}}]}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8d857f24ed56278c.json",
+  "parameterValues" : [ "{'name': '删除创建的标签', 'base_url': '${read_config_yaml(base,base_weixin_url)}', 'parameterize': {'name-tag_id': '/datas/wx/delete_flag_data.yaml'}, 'request': {'method': 'post', 'url': '/cgi-bin/tags/delete?access_token=${read_extract_yaml(access_token)}', 'json': {'tag': {'id': '${read_extract_yaml(tag_id)}'}}}, 'validate': [{'equals': {'status_code': 200}}]}" ]
+}

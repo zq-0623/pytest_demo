@@ -1,0 +1,12 @@
+-
+  name: $ddt{name}
+  parameterize:
+    name-url-assert_str1-assert_str2: /datas/demo/sentences_data.yaml
+  base_url: ${read_config_yaml(base,base_demo_url)}
+  request:
+    method: get
+    url: $ddt{url}
+  validate:
+    - equals: {status_code: 200}
+    - contains: $ddt{assert_str1}
+    - contains: $ddt{assert_str2}

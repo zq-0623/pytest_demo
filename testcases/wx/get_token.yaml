@@ -1,0 +1,18 @@
+-
+  name: $ddt{name}
+  base_url: ${read_config_yaml(base,base_weixin_url)}
+  parameterize:
+    name-appid-secret-grant_type-assert_str: /datas/wx/get_token_data.yaml
+  request:
+    method: get
+    url: /cgi-bin/token
+    params:
+      grant_type: $ddt{grant_type}
+      appid: $ddt{appid}
+      secret: $ddt{secret}
+  extract:
+    access_token: '"access_token":"(.*?)"'
+    expires_in: $.expires_in
+  validate:
+    - equals: {status_code: 200}
+    - contains: $ddt{assert_str}

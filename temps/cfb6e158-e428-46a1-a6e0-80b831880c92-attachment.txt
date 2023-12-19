@@ -1,0 +1,9 @@
+INFO     log:logger_util.py:78 --------接口测试开始--------
+INFO     log:logger_util.py:78 请求名称：删除系统标签
+INFO     log:logger_util.py:78 请求方式：post
+INFO     log:logger_util.py:78 请求路径：https://api.weixin.qq.com/cgi-bin/tags/delete?access_token=57_lceN0AbZCMVKe-cgOsZy1qT9TQ85w3Thi6JfbHhQjLtZ4Qh6icwcg_3K7PhirO9ALJ1vLUSmRJIG6USPddJkEZeUa5ZIuwtdvV3KHoQdSzHrSn3t3l8MDvn845cLxxGfbRTAUgt4aU_ftw9nYPJcAHACTN
+INFO     log:logger_util.py:78 请求json参数：{'tag': {'id': 1}}
+INFO     log:logger_util.py:78 预期结果：[{'equals': {'status_code': 200}}]
+INFO     log:logger_util.py:78 实际结果：{'errcode': 45058, 'errmsg': "can't modify sys tag hint: [bGdCbxore-YVbxca] rid: 629eea17-639806d0-4f0adc9c"}
+INFO     log:logger_util.py:78 接口测试成功
+INFO     log:logger_util.py:78 --------接口测试结束--------
